@@ -6,8 +6,30 @@
 body {
     background: url(img/Background.png);
     color: white;
+    font-size: 40px;
+    font-family: 'Yusei Magic', sans-serif;
+    color: orange;
 }
 
-p {
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 100px 50px;
+    perspective: 1000px;
+}
+
+.txt-container p {
+    display: inline-blox;
     text-align: center;
+    margin: 20px 20px;
+    transform: rotateX(30deg);
+    animation: moveDownUp 50s linear infinite;
+}
+
+@keyframes moveDownUp {
+    100% {
+        transform: translate(-50%);
+    }
 }
