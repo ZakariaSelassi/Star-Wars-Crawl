@@ -8,36 +8,36 @@ body {
     animation-name: background_img;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
-.container {
+section {
+    perspective: 300px;
+}
+
+.txt-container {
     display: flex;
-    justify-content: center;
-    width: 100%;
     align-items: center;
-    margin: 100px 50px;
-    perspective: 1000px;
+    justify-content: center;
+
 }
 
-.txt-container p {
-    display: inline-blox;
+p {
     text-align: center;
-    margin: 20px 20px;
-    transform: rotateX(30deg);
-    animation: moveDownUp 50s linear infinite;
-    font-size: 40px;
-    font-family: 'Yusei Magic', sans-serif;
+    width: 50%;
     color: orange;
+    font-size: 60px;
+    border: 2px solid white;
+    transform: rotateX(50deg);
 }
-
 
 h1 {
     color: blue;
     font-size: 200px;
     font-style: italic;
-    margin: auto;
-    text-align: center;
-    padding: 17% 0;
+    position: absolute;
+    top:25%;
+    left: 20%;
     animation-name: h1_bye;
     animation-duration: 2s;
     animation-fill-mode: forwards;
