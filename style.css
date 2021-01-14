@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  animation-name: background_img;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+    color: blue;
+    font-size: 200px;
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+    padding: 17% 0;
+    animation-name: h1_bye;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background_img {
+    0%   {
+        background-color: black;
+    }
+    100% {
+        background-image: url(img/Background.png);
+    }
+  }
+/* background-image: url(img/Background.png); */
+
+@keyframes h1_bye {
+    0%   {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
