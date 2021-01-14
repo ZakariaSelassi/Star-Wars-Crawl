@@ -30,11 +30,6 @@ body {
     color: orange;
 }
 
-@keyframes moveDownUp {
-    100% {
-        transform: translate(-50%);
-    }
-}
 
 h1 {
     color: blue;
@@ -57,14 +52,17 @@ h1 {
     }
 }
 
-
-/* background-image: url(img/Background.png); */
-
 @keyframes h1_bye {
     0% {
         opacity: 1;
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes moveDownUp {
+    100% {
+        transform: translate(-50%);
     }
 }
