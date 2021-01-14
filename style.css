@@ -8,6 +8,7 @@ body {
     animation-name: background_img;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
 .container {
@@ -17,22 +18,34 @@ body {
     align-items: center;
     margin: 100px 50px;
     perspective: 1000px;
+    position: relative;
 }
+
+.txt-container {}
 
 .txt-container p {
     display: inline-blox;
+    animation: moveDownUp 50s linear;
+    transform: rotateX(30deg);
     text-align: center;
     margin: 20px 20px;
-    transform: rotateX(30deg);
-    animation: moveDownUp 50s linear infinite;
     font-size: 40px;
     font-family: 'Yusei Magic', sans-serif;
     color: orange;
 }
 
 @keyframes moveDownUp {
+    0% {
+        /* The element starts below the screen */
+        top: 0;
+        /* Rotate the text 20 degrees but keep it close to the viewer */
+        transform: rotateX(30deg) translateZ(0);
+    }
     100% {
-        transform: translate(-50%);
+        /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+        top: -6000px;
+        /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+        transform: rotateX(40deg) translateZ(-2500px);
     }
 }
 
