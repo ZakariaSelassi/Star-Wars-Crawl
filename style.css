@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/Background.png);
+    color: white;
+}
+
+p {
+    text-align: center;
+}
