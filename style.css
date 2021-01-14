@@ -4,11 +4,10 @@
 }
 
 body {
-    background: url(img/Background.png);
-    color: white;
-    font-size: 40px;
-    font-family: 'Yusei Magic', sans-serif;
-    color: orange;
+    background-color: black;
+    animation-name: background_img;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
 }
 
 .container {
@@ -26,10 +25,46 @@ body {
     margin: 20px 20px;
     transform: rotateX(30deg);
     animation: moveDownUp 50s linear infinite;
+    font-size: 40px;
+    font-family: 'Yusei Magic', sans-serif;
+    color: orange;
 }
 
 @keyframes moveDownUp {
     100% {
         transform: translate(-50%);
+    }
+}
+
+h1 {
+    color: blue;
+    font-size: 200px;
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+    padding: 17% 0;
+    animation-name: h1_bye;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background_img {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-image: url(img/Background.png);
+    }
+}
+
+
+/* background-image: url(img/Background.png); */
+
+@keyframes h1_bye {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
