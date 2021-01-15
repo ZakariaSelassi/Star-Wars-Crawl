@@ -1,78 +1,99 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 body {
-  background-color: black;
-  animation-name: background_img;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 4s;
+    background-color: black;
+    animation-name: background_img;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
 }
 
 .txt-container {
     display: flex;
     justify-content: center;
-  margin-top: 100px;
-  height: 90vh;
-  border: 2px solid white;
-  overflow: hidden;
+    margin-top: 100px;
+    height: 90vh;
+    border: 2px solid white;
+    overflow: hidden;
 }
 
 h1 {
-  color: rgb(0, 174, 255);
-  font-size: 100px;
-  font-style: italic;
-  position: absolute;
-  top:40%;
+    color: rgb(0, 174, 255);
+    font-size: 100px;
+    font-style: italic;
+    position: absolute;
+    top: 40%;
     left: 30%;
-  animation-name: h1_bye;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+    animation-name: h1_bye;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+img {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    opacity: 0;
+    animation: display_logo 5s linear forwards;
+    animation-delay: 5s;
+}
+
+@keyframes display_logo {
+    0% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 1;
+    }
 }
 
 p {
-  width: 50%;
-  text-align: center;
-  color: orange;
-  font-size: 100px;
-  text-align: justify;
-  padding-top: 90vh;
-  transform: perspective(300px) rotateX(30deg);
-  animation-name: p_avandce;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-  animation-delay: 3s;
+    width: 50%;
+    text-align: center;
+    color: orange;
+    font-size: 100px;
+    text-align: justify;
+    padding-top: 90vh;
+    transform: perspective(300px) rotateX(30deg);
+    animation-name: p_avandce;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    /*animation-delay: 3s;*/
+    animation-timing-function: linear;
 }
 
 @keyframes background_img {
-  0% {
-    background-color: black;
-  }
-  100% {
-    background-image: url(img/Background.png);
-  }
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-image: url(img/Background.png);
+    }
 }
 
 @keyframes h1_bye {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes p_avandce {
-  0% {
-    transform: perspective(300px) rotateX(30deg) translateY(500px);
-  }
-  100% {
-    transform: perspective(300px) rotateX(30deg) translateY(-10000px);
-   
-  }
+    0% {
+        transform: perspective(300px) rotateX(30deg) translateY(500px);
+    }
+    100% {
+        transform: perspective(300px) rotateX(30deg) translateY(-10000px);
+    }
 }
