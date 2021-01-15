@@ -9,8 +9,9 @@ html {
 body {
   background-color: black;
   animation-name: background_img;
-  animation-duration: 7s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
 
 .txt-container {
@@ -23,7 +24,7 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: rgb(0, 174, 255);
   font-size: 100px;
   font-style: italic;
   position: absolute;
@@ -40,11 +41,12 @@ p {
   color: orange;
   font-size: 100px;
   text-align: justify;
-  padding-top: 700px;
+  padding-top: 90vh;
   transform: perspective(300px) rotateX(30deg);
   animation-name: p_avandce;
   animation-duration: 50s;
   animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 
 @keyframes background_img {
