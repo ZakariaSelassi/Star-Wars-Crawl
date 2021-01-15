@@ -13,6 +13,7 @@ body {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: 4s;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .txt-container {
@@ -38,8 +39,8 @@ h1 {
 
 img {
     position: absolute;
-    top: 20%;
-    left: 35%;
+    top: 5%;
+    left: 5%;
     opacity: 0;
     animation: display_logo 5s linear forwards;
     animation-delay: 5s;
@@ -57,17 +58,17 @@ img {
 }
 
 p {
-    width: 50%;
+    width: 30%;
     text-align: center;
     color: orange;
-    font-size: 100px;
+    font-size: 60px;
     text-align: justify;
     padding-top: 90vh;
     transform: perspective(300px) rotateX(30deg);
     animation-name: p_avandce;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    /*animation-delay: 3s;*/
+    animation-delay: 3s;
     animation-timing-function: linear;
 }
 
