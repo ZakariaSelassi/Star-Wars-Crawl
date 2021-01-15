@@ -16,61 +16,68 @@ body {
     font-family: 'Yusei Magic', sans-serif;
 }
 
-.txt-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    height: 90vh;
-    border: 2px solid white;
-    overflow: hidden;
-}
-
 h1 {
     color: rgb(0, 174, 255);
     font-size: 100px;
     font-style: italic;
     position: absolute;
     top: 40%;
-    left: 30%;
+    left: 25%;
     animation-name: h1_bye;
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
-img {
+#logo1 {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 2%;
     opacity: 0;
     animation: display_logo 5s linear forwards;
     animation-delay: 5s;
 }
 
-@keyframes display_logo {
-    0% {
-        transform: scale(2);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 1;
-    }
+.txt-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 90vh;
+    overflow: hidden;
 }
 
-p {
-    width: 30%;
-    text-align: center;
-    color: orange;
-    font-size: 60px;
-    text-align: justify;
-    padding-top: 90vh;
-    transform: perspective(300px) rotateX(30deg);
+.text_def {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    transform: translateY(1000px) perspective(300px) rotateX(30deg);
     animation-name: p_avandce;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-timing-function: linear;
 }
+
+#logo2 {
+    width: 300px;
+    margin: 30px;
+}
+
+h2 {
+    color:rgb(0, 174, 255);
+    font-size: 100px;
+    margin: 40px;
+}
+
+p {
+
+    text-align: justify;
+    color: orange;
+    font-size: 40px;
+}
+
+/* animation */
 
 @keyframes background_img {
     0% {
@@ -90,11 +97,34 @@ p {
     }
 }
 
-@keyframes p_avandce {
+@keyframes display_logo {
     0% {
-        transform: perspective(300px) rotateX(30deg) translateY(500px);
+        transform: scale(2);
+        opacity: 1;
+    }
+    80% { 
+        transform: scale(0.2);
+        opacity: 1;
     }
     100% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+}
+
+@keyframes p_avandce {
+    0% {
+        transform: perspective(300px) rotateX(30deg) translateY(3000px);
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+
+    100% {
         transform: perspective(300px) rotateX(30deg) translateY(-10000px);
+        opacity: 0;
     }
 }
