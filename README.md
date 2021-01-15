@@ -4,10 +4,7 @@
 
 ## Objectif :
 
-> Utilisation CSS : Animation , rotation 3D , KeyFrame , etc...
-> Travail en binome.
-
-
-
+> Utilisation CSS : Animation , rotation 3D , KeyFrame , etc. 
+Travail en binome.
 
 [LINK](https://zakariaselassi.github.io/Star-Wars-Crawl/)
