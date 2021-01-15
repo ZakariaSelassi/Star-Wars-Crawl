@@ -1,6 +1,6 @@
 # Star-Wars-Crawl
 ## Projet à réaliser 
-[Link](https://www.youtube.com/watch?v=C587lNBQXAw)
+[Lien youtube](https://www.youtube.com/watch?v=C587lNBQXAw)
 
 ## Objectif :
 
@@ -9,4 +9,4 @@
 > Travail en binome.
 
 
-[LINK](https://zakariaselassi.github.io/Star-Wars-Crawl/)
+[Page html](https://zakariaselassi.github.io/Star-Wars-Crawl/)
